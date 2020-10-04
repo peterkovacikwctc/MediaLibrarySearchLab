@@ -12,6 +12,10 @@ namespace MediaLibrary
         public List<Movie> Movies { get; set; }
         private static NLog.Logger logger = NLogBuilder.ConfigureNLog(Directory.GetCurrentDirectory() + "\\nlog.config").GetCurrentClassLogger();
 
+        public MovieFile(string movieFilePath) {
+
+        }
+
         public bool isUniqueTitle(string title)
         {
             return true;
