@@ -40,7 +40,7 @@ namespace MediaLibrary
                             Boolean isUnique = movieFile.isUniqueTitle(movie.title);
 
                             if (isUnique) {
-                                // movie.mediaId is calculated in movieFile.AddMovie(Movie movie)
+                                // movie.mediaId is calculated in movieFile.AddMovie(movie);
                                 movie.genres = movieManager.enterGenres();
                                 movie.director = movieManager.enterDirector();
                                 movie.runningTime = movieManager.enterRunningTime();
@@ -65,6 +65,7 @@ namespace MediaLibrary
                         */
 
                     }
+                    // display movies
                     else if (choice == "2") {
                         try {
                             StreamReader sr = new StreamReader(file);

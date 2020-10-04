@@ -53,8 +53,14 @@ namespace MediaLibrary
         }
         public TimeSpan enterRunningTime() {
             // ask user for running time
-            Console.WriteLine("Enter the title of the movie: ");
-            TimeSpan runningTime = Console.ReadLine();
+            Console.WriteLine("Enter the running time.");
+            Console.WriteLine("Hours: ");
+            int hours = int.Parse(Console.ReadLine());
+            Console.WriteLine("Minutes: ");
+            int minutes = int.Parse(Console.ReadLine());
+            Console.WriteLine("Seconds ");
+            int seconds = int.Parse(Console.ReadLine());
+            TimeSpan runningTime = new TimeSpan(hours, minutes, seconds);
             return runningTime;
         }
     }
