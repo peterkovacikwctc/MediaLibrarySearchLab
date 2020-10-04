@@ -48,15 +48,14 @@ namespace MediaLibrary
         {
             try
             {
-                // // first generate movie id
-                // movie.movieId = Movies.Max(m => m.movieId) + 1;
-                // StreamWriter sw = new StreamWriter(filePath, true);
-                // sw.WriteLine($"{movie.movieId},{movie.title},{string.Join("|", movie.genres)}");
-                // sw.Close();
-                // // add movie details to Lists
-                // Movies.Add(movie);
-                // // log transaction
-                // logger.Info("Movie id {Id} added", movie.movieId);
+                movie.mediaId = Movies.Max(m => m.mediaId) + 1;
+                StreamWriter sw = new StreamWriter(filePath, true);
+                sw.WriteLine($"{movie.mediaId},{movie.title},{string.Join("|", movie.genres)},{movie.director},{movie.runningTime}");
+                sw.Close();
+                // add movie details to Lists
+                Movies.Add(movie);
+                // log transaction
+                logger.Info("Movie id {Id} added", movie.mediaId);
             } 
             catch(Exception ex)
             {

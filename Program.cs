@@ -40,7 +40,11 @@ namespace MediaLibrary
                             Boolean isUnique = movieFile.isUniqueTitle(movie.title);
 
                             if (isUnique) {
+                                // movie.mediaId is calculated in movieFile.AddMovie(Movie movie)
                                 movie.genres = movieManager.enterGenres();
+                                movie.director = movieManager.enterDirector();
+                                movie.runningTime = movieManager.enterRunningTime();
+                                movieFile.AddMovie(movie);
                             }
 
                         }

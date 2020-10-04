@@ -44,5 +44,18 @@ namespace MediaLibrary
             }
             return genres;
         }
+        
+        public string enterDirector() {
+            // ask user for name of director
+            Console.WriteLine("Enter the name of the director: ");
+            string director = Console.ReadLine();
+            return director;
+        }
+        public TimeSpan enterRunningTime() {
+            // ask user for running time
+            Console.WriteLine("Enter the title of the movie: ");
+            TimeSpan runningTime = Console.ReadLine();
+            return runningTime;
+        }
     }
 }
