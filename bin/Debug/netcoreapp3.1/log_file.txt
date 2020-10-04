@@ -1,0 +1,28 @@
+2020-09-30 18:27:40.5182|INFO|MediaLibrary.Program|Program started
+2020-09-30 18:27:40.5583|INFO|MediaLibrary.Program|Program ended
+2020-09-30 18:30:09.3660|INFO|MediaLibrary.Program|Program started
+2020-09-30 18:30:09.3963|INFO|MediaLibrary.Program|Program ended
+2020-09-30 18:35:01.2981|INFO|MediaLibrary.Program|Program started
+2020-09-30 18:35:01.3259|INFO|MediaLibrary.Program|Program ended
+2020-09-30 18:35:38.3348|INFO|MediaLibrary.Program|Program started
+2020-09-30 18:35:38.3655|INFO|MediaLibrary.Program|Program ended
+2020-09-30 18:36:33.7813|INFO|MediaLibrary.Program|Program started
+2020-09-30 18:36:33.8069|INFO|MediaLibrary.Program|Program ended
+2020-09-30 18:38:20.4118|INFO|MediaLibrary.Program|Program started
+2020-09-30 18:38:20.4400|INFO|MediaLibrary.Program|Program ended
+2020-09-30 18:42:28.1475|INFO|MediaLibrary.Program|Program started
+2020-09-30 18:42:28.1847|INFO|MediaLibrary.Program|Program ended
+2020-09-30 18:43:45.0349|INFO|MediaLibrary.Program|Program started
+2020-09-30 18:43:45.0688|INFO|MediaLibrary.Program|Program ended
+2020-09-30 18:44:56.7095|INFO|MediaLibrary.Program|Program started
+2020-09-30 18:44:56.7489|INFO|MediaLibrary.Program|Program ended
+2020-09-30 18:50:46.5100|INFO|MediaLibrary.Program|Program started
+2020-09-30 18:50:46.5547|INFO|MediaLibrary.FileScrubber|File scrub started
+2020-09-30 18:50:46.5547|ERROR|MediaLibrary.FileScrubber|Could not find file 'C:\Users\Peter Kovacik\Documents\DOTNET\MediaLibrary\movies.csv'.
+2020-09-30 18:50:46.5684|INFO|MediaLibrary.Program|
+2020-09-30 18:50:46.5684|INFO|MediaLibrary.Program|Program ended
+2020-09-30 18:54:24.5598|INFO|MediaLibrary.Program|Program started
+2020-09-30 18:54:24.6142|INFO|MediaLibrary.FileScrubber|File scrub started
+2020-09-30 18:54:24.6552|INFO|MediaLibrary.FileScrubber|File scrub ended
+2020-09-30 18:54:24.6614|INFO|MediaLibrary.Program|movies.scrubbed.csv
+2020-09-30 18:54:24.6614|INFO|MediaLibrary.Program|Program ended
