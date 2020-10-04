@@ -26,3 +26,7 @@
 2020-09-30 18:54:24.6552|INFO|MediaLibrary.FileScrubber|File scrub ended
 2020-09-30 18:54:24.6614|INFO|MediaLibrary.Program|movies.scrubbed.csv
 2020-09-30 18:54:24.6614|INFO|MediaLibrary.Program|Program ended
+2020-10-03 19:52:07.8789|INFO|MediaLibrary.Program|Program started
+2020-10-03 19:52:07.9204|INFO|MediaLibrary.FileScrubber|File already scrubbed
+2020-10-03 19:52:07.9269|INFO|MediaLibrary.Program|movies.scrubbed.csv
+2020-10-03 19:52:07.9269|INFO|MediaLibrary.Program|Program ended
