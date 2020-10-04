@@ -14,38 +14,72 @@ namespace MediaLibrary
             // create list of movies
             string movieFilePath = Directory.GetCurrentDirectory() + "\\movies.scrubbed.csv";
             MovieFile movieFile = new MovieFile(movieFilePath);
+            string file = "movies.scrubbed.csv";
 
-            string choice;
-            do {
-                Console.WriteLine("Enter 1 to add movie.");
-                Console.WriteLine("Enter 2 to display all movies.");
-                Console.WriteLine("Enter anything else to quit.");
-                choice = Console.ReadLine();
+            // check if file exists
+            if(!File.Exists(file)) {
+                logger.Info("The file " + file + " does not exist.");
+            }
+            else {
+                string choice;
+                do {
+                    Console.WriteLine("Enter 1 to add movie.");
+                    Console.WriteLine("Enter 2 to display all movies.");
+                    Console.WriteLine("Enter anything else to quit.");
+                    choice = Console.ReadLine();
 
-                if (choice == "1") {
-                    // add movies
+                    if (choice == "1") {
+                        try {
+                            Movie movie = new Movie();
+                            MovieManager movieManager = new MovieManager();
 
-                    /*
-                        1.) add title
-                        2.) check to see if title is unique - if (movieFile.isUniqueTitle(movie.title))
-                        3.) enter genre(s) (add no genres listed if none)
-                        4.) enter director
-                        5.) enter running time - public TimeSpan runningTime
-                        -------------------
-                        Add movie to list - movieFile.AddMoive(movie);
-                    */
+                            // ask user for name of title
+                            movie.title = movieManager.enterTitle();
 
-                }
-                else if (choice == "2") {
-                    // display all movies
-                    // ----------------------
-                    // foreach(Movie m in movieFile.Movies)
-                    // {
-                    //     Console.WriteLine(m.Display());
-                    // }
-                }
-            } while (choice == "1" || choice == "2");
+                            // check to see if the same movie exists in library
+                            Boolean isUnique = movieFile.isUniqueTitle(movie.title);
 
+                            if (isUnique) {
+                                movie.genres = movieManager.enterGenres();
+                            }
+
+                        }
+                        catch (Exception e) {
+                            logger.Error(e.Message);
+                        }
+                    
+                        // add movies
+
+                        /*
+                            1.) add title
+                            2.) check to see if title is unique - if (movieFile.isUniqueTitle(movie.title))
+                            3.) enter genre(s) (add no genres listed if none)
+                            4.) enter director
+                            5.) enter running time - public TimeSpan runningTime
+                            -------------------
+                            Add movie to list - movieFile.AddMoive(movie);
+                        */
+
+                    }
+                    else if (choice == "2") {
+                        try {
+                            StreamReader sr = new StreamReader(file);
+                            while (!sr.EndOfStream) {
+                                
+                            }
+                        }
+                        catch (Exception e) {
+                            logger.Error(e.Message);
+                        }
+                        // display all movies
+                        // ----------------------
+                        // foreach(Movie m in movieFile.Movies)
+                        // {
+                        //     Console.WriteLine(m.Display());
+                        // }
+                    }
+                } while (choice == "1" || choice == "2");
+            }
 
             logger.Info("Program ended");
         }
