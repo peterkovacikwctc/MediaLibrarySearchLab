@@ -10,7 +10,7 @@ namespace MediaLibrary
 
         public override string Display()
         {
-            return $"Id: {mediaId}\nTitle: {title}\nDirector: {director}\nRun time: {runningTime}\nGenres: {string.Join(", ", genres)}\n";
+            return $"Id: {mediaId}\nTitle: {title}\nGenres: {string.Join(", ", genres)}\nDirector: {director}\nRun time: {runningTime}\n";
         }
     }
 }
