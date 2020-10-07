@@ -51,37 +51,19 @@ namespace MediaLibrary
                         catch (Exception e) {
                             logger.Error(e.Message);
                         }
-                    
-                        // add movies
-
-                        /*
-                            1.) add title
-                            2.) check to see if title is unique - if (movieFile.isUniqueTitle(movie.title))
-                            3.) enter genre(s) (add no genres listed if none)
-                            4.) enter director
-                            5.) enter running time - public TimeSpan runningTime
-                            -------------------
-                            Add movie to list - movieFile.AddMoive(movie);
-                        */
-
                     }
                     // display movies
                     else if (choice == "2") {
                         try {
-                            StreamReader sr = new StreamReader(file);
-                            while (!sr.EndOfStream) {
-                                
+                             // Display All Movies
+                            foreach(Movie m in movieFile.Movies)
+                            {
+                                Console.WriteLine(m.Display());
                             }
                         }
                         catch (Exception e) {
                             logger.Error(e.Message);
                         }
-                        // display all movies
-                        // ----------------------
-                        // foreach(Movie m in movieFile.Movies)
-                        // {
-                        //     Console.WriteLine(m.Display());
-                        // }
                     }
                 } while (choice == "1" || choice == "2");
             }
