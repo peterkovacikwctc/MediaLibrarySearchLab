@@ -22,11 +22,23 @@ namespace MediaLibrary
                 {
                     Movie movie = new Movie();
                     string line = sr.ReadLine();
+                    string[] infoArray = line.Split(',');
 
-                    // string[] movieDetails = line.Split(',');
-                    // movie.movieId = UInt64.Parse(movieDetails[0]);
-                    // movie.title = movieDetails[1];
-                    // movie.genres = movieDetails[2].Split('|').ToList();
+                    // movieID (before first comma)
+                    movie.mediaId = UInt64.Parse(infoArray[0]);
+                    // title (everything between first comma and third to last comma)
+                    string title = ""; 
+                    for (int i = 1; i < (infoArray.Length - 3); i++) {
+                        // reinsert any missing commas into title
+                        if (i != (infoArray.Length - 2)) 
+                            title += infoArray[i] + ",";
+                        else
+                            title += infoArray[i]; // no extra comma to the end of the title
+                    }
+                    movie.title = title;
+                    movie.genres = infoArray[(infoArray.Length - 3)].Split('|').ToList();
+                    movie.director = infoArray[(infoArray.Length - 2)];
+                    movie.runningTime = TimeSpan.Parse(infoArray[(infoArray.Length - 1)]);
 
                     Movies.Add(movie);
                 }
