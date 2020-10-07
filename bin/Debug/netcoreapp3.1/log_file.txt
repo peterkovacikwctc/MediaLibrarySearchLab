@@ -30,3 +30,7 @@
 2020-10-03 19:52:07.9204|INFO|MediaLibrary.FileScrubber|File already scrubbed
 2020-10-03 19:52:07.9269|INFO|MediaLibrary.Program|movies.scrubbed.csv
 2020-10-03 19:52:07.9269|INFO|MediaLibrary.Program|Program ended
+2020-10-07 00:15:02.7877|INFO|MediaLibrary.Program|Program started
+2020-10-07 00:15:02.8617|INFO|MediaLibrary.MovieFile|Movies in file 9125
+2020-10-07 00:16:57.5115|INFO|MediaLibrary.MovieFile|Movie id 164980 added
+2020-10-07 00:18:15.0644|INFO|MediaLibrary.Program|Program ended
