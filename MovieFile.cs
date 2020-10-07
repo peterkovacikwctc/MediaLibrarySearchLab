@@ -24,7 +24,7 @@ namespace MediaLibrary
                     string line = sr.ReadLine();
                     string[] infoArray = line.Split(',');
 
-                    // movieID (before first comma)
+                    
                     movie.mediaId = UInt64.Parse(infoArray[0]);
                     // title (everything between first comma and third to last comma)
                     string title = ""; 
@@ -53,6 +53,11 @@ namespace MediaLibrary
 
         public bool isUniqueTitle(string title)
         {
+             if (Movies.ConvertAll(m => m.title.ToLower()).Contains(title.ToLower()))
+            {
+                logger.Info("Duplicate movie title {Title}", title);
+                return false;
+            }
             return true;
         }
 
