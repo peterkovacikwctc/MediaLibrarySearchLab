@@ -30,7 +30,7 @@ namespace MediaLibrary
                     string title = ""; 
                     for (int i = 1; i < (infoArray.Length - 3); i++) {
                         // reinsert any missing commas into title
-                        if (i != (infoArray.Length - 2)) 
+                        if (i != (infoArray.Length - 4)) 
                             title += infoArray[i] + ",";
                         else
                             title += infoArray[i]; // no extra comma to the end of the title
