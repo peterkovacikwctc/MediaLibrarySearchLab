@@ -73,8 +73,16 @@ namespace MediaLibrary
                             Console.WriteLine("Enter text to search: ");
                             string text = Console.ReadLine();
 
+                            // display number of matches
                             var numberMovies = movieFile.Movies.Where(m => m.title.Contains(text)).Count();
                             Console.WriteLine($"There are {numberMovies} movies with \"{text}\" in the title.");
+
+                            // display movie titles that match
+                            var movieTitleMatch = movieFile.Movies.Where(m => m.title.Contains(text));
+                            foreach(Movie m in movieTitleMatch)
+                            {
+                                Console.WriteLine($"  {m.title}");
+                            }
                         }
                         catch (Exception e) {
                             logger.Error(e.Message);
