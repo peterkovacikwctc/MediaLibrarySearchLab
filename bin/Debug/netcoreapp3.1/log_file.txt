@@ -46,3 +46,6 @@
 2020-10-21 19:24:45.8984|INFO|MediaLibrary.Program|Program started
 2020-10-21 19:24:45.9631|INFO|MediaLibrary.MovieFile|Movies in file 9126
 2020-10-21 19:25:06.0330|INFO|MediaLibrary.Program|Program ended
+2020-10-21 19:26:55.8308|INFO|MediaLibrary.Program|Program started
+2020-10-21 19:26:55.9008|INFO|MediaLibrary.MovieFile|Movies in file 9126
+2020-10-21 19:27:03.1374|INFO|MediaLibrary.Program|Program ended

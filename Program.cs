@@ -77,12 +77,19 @@ namespace MediaLibrary
                             var numberMovies = movieFile.Movies.Where(m => m.title.Contains(text)).Count();
                             Console.WriteLine($"There are {numberMovies} movies with \"{text}\" in the title.");
 
+                            // change display color in terminal
+                            Console.ForegroundColor = ConsoleColor.Green;
+
                             // display movie titles that match
                             var movieTitleMatch = movieFile.Movies.Where(m => m.title.Contains(text));
                             foreach(Movie m in movieTitleMatch)
                             {
                                 Console.WriteLine($"  {m.title}");
                             }
+
+                            // change display color back to white
+                            Console.ForegroundColor = ConsoleColor.White;
+
                         }
                         catch (Exception e) {
                             logger.Error(e.Message);
