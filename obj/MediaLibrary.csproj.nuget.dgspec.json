@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Peter Kovacik\\Documents\\DOTNET\\MediaLibrary\\MediaLibrary.csproj": {}
+    "C:\\Users\\Peter Kovacik\\Desktop\\Class9\\MediaLibrary\\MediaLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Peter Kovacik\\Documents\\DOTNET\\MediaLibrary\\MediaLibrary.csproj": {
+    "C:\\Users\\Peter Kovacik\\Desktop\\Class9\\MediaLibrary\\MediaLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Peter Kovacik\\Documents\\DOTNET\\MediaLibrary\\MediaLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\Peter Kovacik\\Desktop\\Class9\\MediaLibrary\\MediaLibrary.csproj",
         "projectName": "MediaLibrary",
-        "projectPath": "C:\\Users\\Peter Kovacik\\Documents\\DOTNET\\MediaLibrary\\MediaLibrary.csproj",
+        "projectPath": "C:\\Users\\Peter Kovacik\\Desktop\\Class9\\MediaLibrary\\MediaLibrary.csproj",
         "packagesPath": "C:\\Users\\Peter Kovacik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Peter Kovacik\\Documents\\DOTNET\\MediaLibrary\\obj\\",
+        "outputPath": "C:\\Users\\Peter Kovacik\\Desktop\\Class9\\MediaLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Peter Kovacik\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -34,3 +34,12 @@
 2020-10-07 00:15:02.8617|INFO|MediaLibrary.MovieFile|Movies in file 9125
 2020-10-07 00:16:57.5115|INFO|MediaLibrary.MovieFile|Movie id 164980 added
 2020-10-07 00:18:15.0644|INFO|MediaLibrary.Program|Program ended
+2020-10-21 19:13:56.1019|INFO|MediaLibrary.Program|Program started
+2020-10-21 19:13:56.1720|INFO|MediaLibrary.MovieFile|Movies in file 9126
+2020-10-21 19:16:43.0324|INFO|MediaLibrary.Program|Program ended
+2020-10-21 19:16:48.6455|INFO|MediaLibrary.Program|Program started
+2020-10-21 19:16:48.7068|INFO|MediaLibrary.MovieFile|Movies in file 9126
+2020-10-21 19:19:46.5929|INFO|MediaLibrary.Program|Program ended
+2020-10-21 19:19:51.9058|INFO|MediaLibrary.Program|Program started
+2020-10-21 19:19:51.9739|INFO|MediaLibrary.MovieFile|Movies in file 9126
+2020-10-21 19:20:02.4330|INFO|MediaLibrary.Program|Program ended

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UmXwmXTwnJgKM19CfHfIhAaBQ8rFMNQDyybs7rsL+jcHXXjyYWyPHKfMDm5wgOk2KjK2QGov0Bc/pAO0ou7/Gw==",
+  "dgSpecHash": "RQSNaXda9J4g9x/6jE4gBglj8bRfiWuFP0K3yrlJKsW9qiVCCbPjXIPdv6A0XIdZw8BV4T7vw5xRhyzC3n/PdQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Peter Kovacik\\Documents\\DOTNET\\MediaLibrary\\MediaLibrary.csproj",
+  "projectFilePath": "C:\\Users\\Peter Kovacik\\Desktop\\Class9\\MediaLibrary\\MediaLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Peter Kovacik\\.nuget\\packages\\microsoft.extensions.configuration\\3.0.0\\microsoft.extensions.configuration.3.0.0.nupkg.sha512",
     "C:\\Users\\Peter Kovacik\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.0.0\\microsoft.extensions.configuration.abstractions.3.0.0.nupkg.sha512",
